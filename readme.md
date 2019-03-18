@@ -1,5 +1,8 @@
 # Laroute
 
+Fork of (aaronlord/laroute)[https://github.com/aaronlord/laroute/pull/95], which updates the seemingly dead package to the current version of Laravel. 
+It's recommended to use (https://github.com/tightenco/ziggy)[https://github.com/tightenco/ziggy] instead.
+
 [Laravel](http://laravel.com/) has some pretty sweet [helper functions](http://laravel.com/docs/helpers#urls) for generating urls/links and its auto-json-magic makes it building APIs super easy. It's my go-to choice for building single-page js apps, but routing can quickly become a bit of a pain.
 
 Wouldn't it be amazing if we could access our Laravel routes from JavaScript?
@@ -16,12 +19,12 @@ Install the usual [composer](https://getcomposer.org/) way.
 ```json
 {
 	"require" : {
-		"lord/laroute" : "2.*"
+		"surgio/laroute" : "2.*"
 	}
 }
 ```
 
-n.b Laravel 4.x users, check out [version 1.3.2](https://github.com/aaronlord/laroute/tree/v1.3.2)
+n.b Laravel 4.x users, check out [version 1.3.2](https://github.com/surgiollc/laroute/tree/v1.3.2)
 
 ###### app/config/app.php
 ```php
