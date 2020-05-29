@@ -3,14 +3,15 @@
 namespace Lord\Laroute\Routes;
 
 use Mockery;
+use PHPUnit\Framework\TestCase as PHPUnit_Framework_TestCase;
 
-class CollectionTest extends \PHPUnit_Framework_TestCase
+class CollectionTest extends PHPUnit_Framework_TestCase
 {
     protected $routeCollection;
 
     protected $routes;
 
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
 
@@ -38,7 +39,7 @@ class CollectionTest extends \PHPUnit_Framework_TestCase
     }
 
 
-    public function tearDown()
+    public function tearDown(): void
     {
         Mockery::close();
     }

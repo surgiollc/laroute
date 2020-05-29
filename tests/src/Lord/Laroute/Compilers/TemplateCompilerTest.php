@@ -3,12 +3,13 @@
 namespace Lord\Laroute\Compilers;
 
 use Mockery;
+use PHPUnit\Framework\TestCase as PHPUnit_Framework_TestCase;
 
-class TemplateCompilerTest extends \PHPUnit_Framework_TestCase
+class TemplateCompilerTest extends PHPUnit_Framework_TestCase
 {
     protected $compiler;
 
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
 
@@ -32,7 +33,7 @@ class TemplateCompilerTest extends \PHPUnit_Framework_TestCase
         $this->assertSame($expected, $this->compiler->compile($template, $data));
     }
 
-    public function tearDown()
+    public function tearDown(): void
     {
         Mockery::close();
     }
