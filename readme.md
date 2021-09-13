@@ -19,7 +19,7 @@ Install the usual [composer](https://getcomposer.org/) way.
 ```json
 {
 	"require" : {
-		"surgio/laroute" : "2.*"
+		"surgiollc/laroute" : "2.*"
 	}
 }
 ```
@@ -95,7 +95,7 @@ return [
      * the ported helper Laravel url/route functions and the route data to go
      * with them.
      */
-    'template' => 'vendor/surgio/laroute/src/templates/laroute.js',
+    'template' => 'vendor/surgiollc/laroute/src/templates/laroute.js',
 
     /*
      * Appends a prefix to URLs. By default the prefix is an empty string.
