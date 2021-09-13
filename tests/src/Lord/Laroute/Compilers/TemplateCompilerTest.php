@@ -1,6 +1,6 @@
 <?php
 
-namespace Lord\Laroute\Compilers;
+namespace Surgio\Laroute\Compilers;
 
 use Mockery;
 use PHPUnit\Framework\TestCase as PHPUnit_Framework_TestCase;
@@ -19,7 +19,7 @@ class TemplateCompilerTest extends PHPUnit_Framework_TestCase
     public function testItIsOfTheCorrectInterface()
     {
         $this->assertInstanceOf(
-            'Lord\Laroute\Compilers\CompilerInterface',
+            'Surgio\Laroute\Compilers\CompilerInterface',
             $this->compiler
         );
     }

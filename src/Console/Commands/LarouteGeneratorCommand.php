@@ -1,9 +1,9 @@
 <?php
 
-namespace Lord\Laroute\Console\Commands;
+namespace Surgio\Laroute\Console\Commands;
 
-use Lord\Laroute\Routes\Collection as Routes;
-use Lord\Laroute\Generators\GeneratorInterface as Generator;
+use Surgio\Laroute\Routes\Collection as Routes;
+use Surgio\Laroute\Generators\GeneratorInterface as Generator;
 
 use Illuminate\Config\Repository as Config;
 use Illuminate\Console\Command;
@@ -36,14 +36,14 @@ class LarouteGeneratorCommand extends Command
     /**
      * An array of all the registered routes.
      *
-     * @var \Lord\Laroute\Routes\Collection
+     * @var \Surgio\Laroute\Routes\Collection
      */
     protected $routes;
 
     /**
      * The generator instance.
      *
-     * @var \Lord\Laroute\Generators\GeneratorInterface
+     * @var \Surgio\Laroute\Generators\GeneratorInterface
      */
     protected $generator;
 

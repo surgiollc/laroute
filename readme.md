@@ -1,6 +1,6 @@
 # Laroute
 
-Fork of (aaronlord/laroute)[https://github.com/aaronlord/laroute/pull/95], which updates the seemingly dead package to the current version of Laravel. 
+Fork of (aaronlord/laroute)[https://github.com/aaronlord/laroute/pull/95], which updates the seemingly dead package to the current version of Laravel.
 It's recommended to use (https://github.com/tightenco/ziggy)[https://github.com/tightenco/ziggy] instead.
 
 [Laravel](http://laravel.com/) has some pretty sweet [helper functions](http://laravel.com/docs/helpers#urls) for generating urls/links and its auto-json-magic makes it building APIs super easy. It's my go-to choice for building single-page js apps, but routing can quickly become a bit of a pain.
@@ -24,17 +24,15 @@ Install the usual [composer](https://getcomposer.org/) way.
 }
 ```
 
-n.b Laravel 4.x users, check out [version 1.3.2](https://github.com/surgiollc/laroute/tree/v1.3.2)
-
 ###### app/config/app.php
 ```php
 	...
-	
+
 	'providers' => array(
 		...
-		Lord\Laroute\LarouteServiceProvider::class,
+		Surgio\Laroute\LarouteServiceProvider::class,
 	],
-	
+
 	...
 ```
 
@@ -43,10 +41,10 @@ n.b Laravel 4.x users, check out [version 1.3.2](https://github.com/surgiollc/la
 Copy the packages config files.
 
 ```
-php artisan vendor:publish --provider='Lord\Laroute\LarouteServiceProvider'
+php artisan vendor:publish --provider='Surgio\Laroute\LarouteServiceProvider'
 ```
 
-###### app/config/packages/lord/laroute/config.php
+###### app/config/laroute.php
 
 ```php
 
@@ -98,7 +96,7 @@ return [
      * with them.
      */
     'template' => 'vendor/surgio/laroute/src/templates/laroute.js',
-    
+
     /*
      * Appends a prefix to URLs. By default the prefix is an empty string.
     *
@@ -107,7 +105,7 @@ return [
 
 ];
 
-    
+
 ```
 
 ### Generate the `laroute.js`
@@ -133,10 +131,10 @@ By default, all of the functions are under the `laroute` namespace. This documen
 
 ### action
 
-Generate a URL for a given controller action. 
+Generate a URL for a given controller action.
 
 ```js
-/** 
+/**
  * laroute.action(action, [parameters = {}])
  *
  * action     : The action to route to.
@@ -157,7 +155,7 @@ Generate a URL for a given named route.
  * name       : The name of the route to route to.
  * parameters : Optional. key:value object literal of route parameters.
  */
- 
+
  laroute.route('Hello.{planet}', { planet : 'world' });
 ```
 
@@ -172,7 +170,7 @@ Generate a fully qualified URL to the given path.
  * name       : The name of the route to route to.
  * parameters : Optional. value array of route parameters.
  */
- 
+
  laroute.url('foo/bar', ['aaa', 'bbb']); // -> /foo/bar/aaa/bbb
 ```
 
@@ -188,7 +186,7 @@ Generate a html link to the given url.
  * title      : Optional. The anchor text to display
  * attributes : Optional. key:value object literal of additional html attributes.
  */
- 
+
  laroute.link_to('foo/bar', 'Foo Bar', { style : "color:#bada55;" });
 ```
 
@@ -205,7 +203,7 @@ Generate a html link to the given route.
  * parameters : Optional. key:value object literal of route parameters.
  * attributes : Optional. key:value object literal of additional html attributes.
  */
- 
+
  laroute.link_to_route('home', 'Home');
 ```
 
@@ -222,7 +220,7 @@ Generate a html link to the given action.
  * parameters : Optional. key:value object literal of route parameters.
  * attributes : Optional. key:value object literal of additional html attributes.
  */
- 
+
  laroute.link_to_action('HelloController@planet', undefined, { planet : 'world' });
 ```
 
@@ -248,4 +246,4 @@ Route::group(['laroute' => false], function () {
 
 ## Licence
 
-[View the licence in this repo.](https://github.com/aaronlord/laroute/blob/master/LICENSE)
+[View the licence in this repo.](https://github.com/surgiollc/laroute/blob/master/LICENSE)

@@ -1,6 +1,6 @@
 <?php
 
-namespace Lord\Laroute\Routes;
+namespace Surgio\Laroute\Routes;
 
 use Mockery;
 use PHPUnit\Framework\TestCase as PHPUnit_Framework_TestCase;
