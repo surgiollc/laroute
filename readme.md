@@ -19,7 +19,7 @@ Install the usual [composer](https://getcomposer.org/) way.
 ```json
 {
 	"require" : {
-		"surgio/laroute" : "3.*"
+		"surgio/laroute" : "2.*"
 	}
 }
 ```
