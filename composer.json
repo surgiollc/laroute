@@ -1,5 +1,5 @@
 {
-  "name": "surgio/laroute",
+  "name": "surgiollc/laroute",
   "description": "Access Laravels URL/Route helper functions, from JavaScript.",
   "keywords": [
     "laravel",
@@ -9,13 +9,13 @@
   ],
   "authors": [
     {
-      "name": "Aaron Lord",
+      "name": "Aaron Surgio",
       "email": "hello@aaronlord.is"
     }
   ],
   "license": "MIT",
   "require": {
-    "php": ">=7.3.0",
+    "php": ">=8.0",
     "illuminate/support": "5.0.*|5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.6.*|5.7.*|5.8.*|6.0.*|7.13.*|8.*",
     "illuminate/routing": "5.0.*|5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.6.*|5.7.*|5.8.*|6.0.*|7.13.*|8.*",
     "illuminate/console": "5.0.*|5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.6.*|5.7.*|5.8.*|6.0.|7.13.*|8.*",
@@ -28,14 +28,14 @@
   },
   "autoload": {
     "psr-4": {
-      "Lord\\Laroute\\": "src/"
+      "Surgio\\Laroute\\": "src/"
     }
   },
   "minimum-stability": "dev",
   "extra": {
     "laravel": {
         "providers": [
-            "Lord\\Laroute\\LarouteServiceProvider"
+            "Surgio\\Laroute\\LarouteServiceProvider"
         ]
     }
 }
